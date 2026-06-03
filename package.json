@@ -1,0 +1,23 @@
+{
+  "name": "claude-notification-popup",
+  "version": "1.0.0",
+  "description": "当 Claude Code 请求权限时，只在你离开终端时才弹窗提醒",
+  "type": "module",
+  "bin": {
+    "claude-notification-popup": "./cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "hook.mjs",
+    "dialog.mjs",
+    "i18n.mjs",
+    "jump.mjs",
+    "claude-icon-rounded.png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parker1411/claude-notification-popup.git"
+  },
+  "keywords": ["claude", "claude-code", "notification", "permission", "hook"],
+  "license": "MIT"
+}
