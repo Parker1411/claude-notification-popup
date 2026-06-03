@@ -43,6 +43,8 @@ function install() {
       group.hooks = group.hooks.filter((h) => !h.command.includes("claude-notification-popup"));
     }
   }
+  // 移除清空后的空组
+  cfg.hooks.PermissionRequest = cfg.hooks.PermissionRequest.filter((g) => g.hooks && g.hooks.length > 0);
 
   cfg.hooks.PermissionRequest.push({
     matcher: "*",
